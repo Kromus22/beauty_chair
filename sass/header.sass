@@ -1,0 +1,51 @@
+@import 'variables'
+
+.header
+  background-color: $white
+  border-bottom: 1px solid $grey
+  &__container
+    display: flex
+    flex-direction: column
+  &__contacts
+    @include flex
+    justify-content: space-between
+    padding: 20px 0
+  &__logo_wrapper
+    @include flex
+  &__phone
+    @include flex
+
+  &__link
+    font-weight: 400
+    font-size: 16px
+    line-height: 19px
+    color: $black
+    margin-right: 40px
+  &__button
+    padding: 12px 26px
+    border: 2px solid $green
+    border-radius: 40px
+
+.logo__text
+  font-weight: 700
+  font-size: 36px
+  line-height: 42px
+  letter-spacing: 0.1em
+  color: $green
+
+.top-header
+  padding: 17px 0
+
+.navigation__list-top,.navigation__list-bottom
+  @include flex
+  justify-content: center
+
+.navigation__list-top
+  gap: 30px
+
+.navigation__list-bottom
+  gap: 40px
+  padding: 30px 0
+
+.bottom-header
+  background-color: $white

@@ -11,10 +11,11 @@
 </head>
 
 <body>
-
-  <header class="header">
-    <div class="container header__container">
-      <div class="header__navigation-top navigation">
+  <!-- полную дичь сделал в шапке. 
+    почему-то именно так я реализовал цвета заднего фона -->
+  <div class="top-header">
+    <div class="container">
+      <div class="header__navigation-top">
         <ul class="navigation__list-top">
           <li class="navigation__item-top">
             <a class="navigation__link-top" href="#">Доставка</a>
@@ -33,17 +34,26 @@
           </li>
         </ul>
       </div>
+    </div>
+  </div>
+  <header class="header">
+    <div class="container header__container">
       <div class="header__contacts">
         <div class="header__logo_wrapper">
-          <img class="logo__img" src="" alt="Лого компании"></img>
-          <div class="logo__text"></div>
+          <img class="logo__img" src="./img/logo.svg" alt="Лого компании"></img>
+          <span class="logo__text">BEAUTY</span>
         </div>
         <div class="header__phone">
           <a class="header__link" href="tel:88121234567">8 (812) 123-45-67</a>
-          <button class="header__button"></button>
+          <button class="header__button">Обратный звонок</button>
         </div>
       </div>
-      <div class="header__navigation-bottom navigation">
+    </div>
+  </header>
+
+  <div class="bottom-header">
+    <div class="container">
+      <div class="header__navigation-bottom">
         <ul class="navigation__list-bottom">
           <li class="navigation__item-bottom">
             <a class="navigation__link-bottom" href="#">Парикмахерская</a>
@@ -66,29 +76,32 @@
         </ul>
       </div>
     </div>
-  </header>
+  </div>
 
   <main>
 
     <section class="promo">
       <h1 class="visually-hidden">BEAUTY chair!</h1>
       <div class="container promo__container">
-        <h2 class="promo__title">Супер кресло</h2>
-        <p class="promo__description">Текст акции всегда отражает суть, а не просто
-          болтовню, поэтому внимательнее</p>
-        <button class="promo__more">Подробнее</button>
+        <div class="promo__info">
+          <h2 class="promo__title">Супер кресло</h2>
+          <p class="promo__description">Текст акции всегда отражает суть, а не просто
+            болтовню, поэтому внимательнее</p>
+          <button class="promo__more">Подробнее</button>
+        </div>
+        <img class="promo__img" src="./img/promo-bg.png" alt="Картинка супер кресла">
       </div>
     </section>
 
     <section class="products">
       <div class="container products__container">
         <h2 class="products__title"></h2>
-        <img class="products__delivery-img" src="" alt="Лого доставки">
+        <img class="products__delivery-img" src="./img/delivery.svg" alt="Лого доставки">
         <div class="products__wrapper">
           <ul class="products__list">
             <li class="products__item">
               <article>
-                <img class="products__img"></img>
+                <img class="products__img" src="./img/chair.png"></img>
                 <p class="products__description">Парикмахерское кресло «Норм» гидравлическое</p>
                 <p class="products__price">9 900 ₽</p>
                 <button class="products__button">Купить</button>
@@ -96,7 +109,7 @@
             </li>
             <li class="products__item">
               <article>
-                <img class="products__img"></img>
+                <img class="products__img" src="./img/chair.png"></img>
                 <p class="products__description">Парикмахерское кресло «Норм» гидравлическое</p>
                 <p class="products__price">9 900 ₽</p>
                 <button class="products__button">Купить</button>
@@ -104,7 +117,7 @@
             </li>
             <li class="products__item">
               <article>
-                <img class="products__img"></img>
+                <img class="products__img" src="./img/chair.png"></img>
                 <p class="products__description">Парикмахерское кресло «Норм» гидравлическое</p>
                 <p class="products__price">9 900 ₽</p>
                 <button class="products__button">Купить</button>
@@ -112,7 +125,7 @@
             </li>
             <li class="products__item">
               <article>
-                <img class="products__img"></img>
+                <img class="products__img" src="./img/chair.png"></img>
                 <p class="products__description">Парикмахерское кресло «Норм» гидравлическое</p>
                 <p class="products__price">9 900 ₽</p>
                 <button class="products__button">Купить</button>
@@ -132,7 +145,7 @@
               10 000 рублей для наших клиентов</p>
             <input type="text" placeholder="Введите e-mail">
           </div>
-          <img class="gifts__img" src="" alt="Конверт">
+          <img class="gifts__img" src="./img/mail.svg" alt="Конверт">
         </div>
         <div class="map">
           <h2 class="map__title">Заходите к нам</h2>

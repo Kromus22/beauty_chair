@@ -1,0 +1,44 @@
+@import 'variables'
+
+.promo
+  background-color: $green
+  &__container
+    display: flex
+  &__info
+    display: flex
+    flex-direction: column
+    padding: 192px 0
+    width: 325px
+    gap: 50px
+    color: $white
+    align-items: start
+    margin-right: 100px
+  &__title
+    font-weight: 700
+    font-size: 48px
+    line-height: 56px
+  &__more
+    color: $white
+    border: 2px solid $white
+    border-radius: 40px
+    padding: 12px 40px
+  &__img
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      background-image: url(../img/white-bg.svg)
+      background-repeat: no-repeat
+      width: 677px
+      height: 677px
+      left: 50%
+      top: 50%
+    &::before
+      content: ''
+      position: absolute
+      background-image: url(../img/second-bg.svg)
+      background-repeat: no-repeat
+      width: 859px
+      height: 859px
+      left: 50%
+      top: 50%

@@ -1,8 +1,6 @@
 @import 'variables'
 
 .header
-  background-color: $white
-  border-bottom: 1px solid $grey
   &__container
     display: flex
     flex-direction: column
@@ -35,6 +33,7 @@
 
 .top-header
   padding: 17px 0
+  background-color: $grey
 
 .navigation__list-top,.navigation__list-bottom
   @include flex
@@ -49,3 +48,7 @@
 
 .bottom-header
   background-color: $white
+
+.central-header
+  background-color: $white
+  border-bottom: 1px solid $grey

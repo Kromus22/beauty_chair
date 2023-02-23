@@ -1,0 +1,54 @@
+@import 'variables'
+
+.about
+  padding-bottom: 132px
+  &__container
+    display: grid
+    grid-template-columns: repeat(auto-fit, 540px)
+    gap: 30px
+
+.gifts
+  background-color: $green
+  display: flex
+  flex-direction: row
+  justify-content: space-evenly
+  gap: 65px
+  padding: 35px 0
+  &__info
+    display: flex
+    flex-direction: column
+    gap: 25px
+    margin-left: 40px
+  &__title
+    @include green-title
+    width: 265px
+  &__description
+    @include green-text
+    width: 231px
+  &__input
+    padding: 9px 50px 9px 25px
+    border: none
+    border-radius: 30px
+    color: #c4c4c4
+  &__img
+    margin-right: 45px
+
+.map
+  background-color: $green
+  &__info
+    display: flex
+    flex-direction: column
+    gap: 25px
+    align-items: start
+    margin-top: 35px
+    margin-left: 40px
+  &__title
+    @include green-title
+  &__description
+    @include green-text
+    max-width: 141px
+  &__button
+    padding: 9px 28px
+    color: $white
+    border: 2px solid $white
+    border-radius: 30px

@@ -1,0 +1,62 @@
+@import 'variables'
+
+.footer
+  &__contacts
+    background-color: $white
+    padding: 38px 0
+  &__top
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+  &__social
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    gap: 20px
+    width: 240px
+    &-item
+      width: 45px
+      height: 45px
+  &__link
+    display: block
+    width: 45px
+    height: 45px
+    &_yt
+      background-image: url(../img/youtube-icon.svg)
+      background-repeat: no-repeat
+    &_vk
+      background-image: url(../img/vk-icon.svg)
+      background-repeat: no-repeat
+    &_fb
+      background-image: url(../img/facebook-icon.svg)
+      background-repeat: no-repeat
+    &_in
+      background-image: url(../img/inst-icon.svg)
+      background-repeat: no-repeat
+  &__address
+    display: block
+    text-align: center
+    font-style: normal
+    font-weight: 400
+    color: $black
+  &__phone
+    @include flex
+  &__link
+    font-weight: 400
+    font-size: 16px
+    line-height: 19px
+    color: $black
+    margin-right: 40px
+    width: 130px
+  &__button
+    padding: 12px 26px
+    border: 2px solid $green
+    border-radius: 40px
+  &__copyright
+    @include flex
+    justify-content: space-between
+    padding: 25px 0
+    font-size: 12px
+    line-height: 14px
+    color: $copyright-color

@@ -18,22 +18,22 @@
     &-item
       width: 45px
       height: 45px
-  &__link
-    display: block
-    width: 45px
-    height: 45px
-    &_yt
-      background-image: url(../img/youtube-icon.svg)
-      background-repeat: no-repeat
-    &_vk
-      background-image: url(../img/vk-icon.svg)
-      background-repeat: no-repeat
-    &_fb
-      background-image: url(../img/facebook-icon.svg)
-      background-repeat: no-repeat
-    &_in
-      background-image: url(../img/inst-icon.svg)
-      background-repeat: no-repeat
+    &__link
+      display: block
+      width: 45px
+      height: 45px
+      &_yt
+        background-image: url(../img/youtube-icon.svg)
+        background-repeat: no-repeat
+      &_vk
+        background-image: url(../img/vk-icon.svg)
+        background-repeat: no-repeat
+      &_fb
+        background-image: url(../img/facebook-icon.svg)
+        background-repeat: no-repeat
+      &_in
+        background-image: url(../img/inst-icon.svg)
+        background-repeat: no-repeat
   &__address
     display: block
     text-align: center
@@ -53,6 +53,9 @@
     padding: 12px 26px
     border: 2px solid $green
     border-radius: 40px
+    transition: background-color .3s ease-in-out
+    &:hover
+      background-color: $green
   &__copyright
     @include flex
     justify-content: space-between
@@ -60,3 +63,28 @@
     font-size: 12px
     line-height: 14px
     color: $copyright-color
+
+@media (max-width:  1024px)
+  .footer
+    &__phone
+      flex-direction: column
+    &__link
+      margin: 0 auto
+    &__copyright
+      flex-direction: column
+      gap: 15px
+
+@media (max-width:  800px)
+  .footer
+    &__top
+      flex-direction: column
+      gap: 15px
+    &__address
+      font-size: 12px
+    &__link
+      font-size: 14px
+    &__button
+      font-size: 14px
+      padding: 10px 23px
+    &__copyright
+      font-size: 10px

@@ -35,12 +35,12 @@
 
 .map
   background-color: $green
+  padding: 35px 0
   &__info
     display: flex
     flex-direction: column
     gap: 25px
     align-items: start
-    margin-top: 35px
     margin-left: 40px
   &__title
     @include green-title
@@ -52,3 +52,26 @@
     color: $white
     border: 2px solid $white
     border-radius: 30px
+    transition: background-color, color .3s ease-in-out
+    &:hover
+      background-color: $white
+      color: $green
+
+@media (max-width: 1024px)
+  .about
+    padding-bottom: 100px
+    &__container
+      grid-template-columns: repeat(auto-fit, 440px)
+      gap: 20px
+      justify-content: space-around
+  .gifts
+    justify-content: space-between
+    &__img
+      display: none
+
+@media (max-width: 1024px)
+  .about
+    padding-bottom: 60px
+    &__container
+      grid-template-columns: repeat(auto-fit, 350px)
+      gap: 15px

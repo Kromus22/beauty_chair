@@ -43,3 +43,19 @@
     color: $white
     background-color: $green
     border-radius: 30px
+    transition: color .3s ease-in-out
+    &:hover
+      color: $black
+
+@media (max-width: 900px)
+  .products
+    padding: 50px 0 70px
+    &__list
+      justify-content: space-around
+
+@media (max-width: 640px)
+  .products
+    &__delivery-img
+      display: none
+    &__list
+      grid-template-columns: repeat(auto-fit, 350px)
